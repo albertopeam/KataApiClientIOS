@@ -1,0 +1,648 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49FF1D361F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1D351F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift */; };
+		49FF1D381F2BA37500AAA40D /* LSStubResponseDSL+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1D371F2BA37500AAA40D /* LSStubResponseDSL+Json.swift */; };
+		A728FA85059C08A58464AD4B /* Pods_KataTODOAPIClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BAB9FE6332141F4937F17 /* Pods_KataTODOAPIClientTests.framework */; };
+		DB8AEF1C8A6F3564D6AC77D4 /* Pods_KataTODOAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F618648049BD9D1C4BA6CBB /* Pods_KataTODOAPIClient.framework */; };
+		EB28C8651C6DD32A004A5E74 /* KataTODOAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EB28C8641C6DD32A004A5E74 /* KataTODOAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB28C87C1C6DD72A004A5E74 /* TODOAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C87B1C6DD72A004A5E74 /* TODOAPIClient.swift */; };
+		EB28C87F1C6DD772004A5E74 /* TODOAPIClientConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C87E1C6DD772004A5E74 /* TODOAPIClientConfig.swift */; };
+		EB28C8811C6DD7CA004A5E74 /* TaskDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8801C6DD7CA004A5E74 /* TaskDTO.swift */; };
+		EB28C8851C6DDA56004A5E74 /* DefaultHeadersRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8841C6DDA56004A5E74 /* DefaultHeadersRequestInterceptor.swift */; };
+		EB28C8881C6DDB1F004A5E74 /* TODOAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8871C6DDB1F004A5E74 /* TODOAPIClientError.swift */; };
+		EB28C88A1C6DDBF8004A5E74 /* TaskDTOJSONParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8891C6DDBF8004A5E74 /* TaskDTOJSONParser.swift */; };
+		EB2B5E8F1E657C8A00B62211 /* KataTODOAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB28C8611C6DD32A004A5E74 /* KataTODOAPIClient.framework */; };
+		EB2B5E951E657D3D00B62211 /* NocillaTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C88C1C6DF109004A5E74 /* NocillaTestCase.swift */; };
+		EB2B5E961E657D4100B62211 /* TODOAPIClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C88E1C6DF13D004A5E74 /* TODOAPIClientTests.swift */; };
+		EB2B5E971E657D4600B62211 /* NSError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8941C6DFDE7004A5E74 /* NSError.swift */; };
+		EB2B5E981E657D4900B62211 /* TODOAPIClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C8961C6DFE37004A5E74 /* TODOAPIClientError.swift */; };
+		EB2B5E991E657D4D00B62211 /* getTasksResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C8911C6DFC23004A5E74 /* getTasksResponse.json */; };
+		EB2B5E9A1E657D5100B62211 /* getTaskByIdResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C8981C6E00D5004A5E74 /* getTaskByIdResponse.json */; };
+		EB2B5E9B1E657D5400B62211 /* addTaskToUserRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C89A1C6E0327004A5E74 /* addTaskToUserRequest.json */; };
+		EB2B5E9C1E657D5700B62211 /* addTaskToUserResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C89C1C6E0364004A5E74 /* addTaskToUserResponse.json */; };
+		EB2B5E9D1E657D5A00B62211 /* updateTaskRequest.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C89E1C6E1E26004A5E74 /* updateTaskRequest.json */; };
+		EB2B5E9E1E657D5E00B62211 /* updateTaskResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = EB28C8A01C6E1EFC004A5E74 /* updateTaskResponse.json */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EB2B5E901E657C8A00B62211 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EB28C8581C6DD32A004A5E74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EB28C8601C6DD32A004A5E74;
+			remoteInfo = KataTODOAPIClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0848BC66DFE0F68A5F29B5ED /* Pods-KataTODOAPIClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClientTests/Pods-KataTODOAPIClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0F618648049BD9D1C4BA6CBB /* Pods_KataTODOAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataTODOAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35637D6F85613D08BE7B1A1A /* Pods-KataTODOAPIClient-KataTODOAPIClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient-KataTODOAPIClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient-KataTODOAPIClientTests/Pods-KataTODOAPIClient-KataTODOAPIClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		49FF1D351F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSStubRequestDSL+Json.swift"; sourceTree = "<group>"; };
+		49FF1D371F2BA37500AAA40D /* LSStubResponseDSL+Json.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LSStubResponseDSL+Json.swift"; sourceTree = "<group>"; };
+		8C76A5B3D80902019BAD4A8A /* Pods-KataTODOAPIClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClientTests/Pods-KataTODOAPIClientTests.release.xcconfig"; sourceTree = "<group>"; };
+		991833180216B366BC8E248D /* Pods-KataTODOAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient/Pods-KataTODOAPIClient.release.xcconfig"; sourceTree = "<group>"; };
+		9E7BE8B071FFE07D669635D6 /* Pods_KataTODOAPIClient_KataTODOAPIClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataTODOAPIClient_KataTODOAPIClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B27E8D81D6515C4971D35505 /* Pods-KataTODOAPIClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient/Pods-KataTODOAPIClient.debug.xcconfig"; sourceTree = "<group>"; };
+		D74BAB9FE6332141F4937F17 /* Pods_KataTODOAPIClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataTODOAPIClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47E9D7801863BF27D058C91 /* Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient-KataTODOAPIClientTests/Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB28C8611C6DD32A004A5E74 /* KataTODOAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KataTODOAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB28C8641C6DD32A004A5E74 /* KataTODOAPIClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KataTODOAPIClient.h; sourceTree = "<group>"; };
+		EB28C8661C6DD32A004A5E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB28C87B1C6DD72A004A5E74 /* TODOAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOAPIClient.swift; sourceTree = "<group>"; };
+		EB28C87E1C6DD772004A5E74 /* TODOAPIClientConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOAPIClientConfig.swift; sourceTree = "<group>"; };
+		EB28C8801C6DD7CA004A5E74 /* TaskDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDTO.swift; sourceTree = "<group>"; };
+		EB28C8841C6DDA56004A5E74 /* DefaultHeadersRequestInterceptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultHeadersRequestInterceptor.swift; sourceTree = "<group>"; };
+		EB28C8871C6DDB1F004A5E74 /* TODOAPIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOAPIClientError.swift; sourceTree = "<group>"; };
+		EB28C8891C6DDBF8004A5E74 /* TaskDTOJSONParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskDTOJSONParser.swift; sourceTree = "<group>"; };
+		EB28C88B1C6DDE7B004A5E74 /* TODOAPIClientPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TODOAPIClientPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		EB28C88C1C6DF109004A5E74 /* NocillaTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NocillaTestCase.swift; sourceTree = "<group>"; };
+		EB28C88E1C6DF13D004A5E74 /* TODOAPIClientTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOAPIClientTests.swift; sourceTree = "<group>"; };
+		EB28C8911C6DFC23004A5E74 /* getTasksResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTasksResponse.json; sourceTree = "<group>"; };
+		EB28C8941C6DFDE7004A5E74 /* NSError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSError.swift; sourceTree = "<group>"; };
+		EB28C8961C6DFE37004A5E74 /* TODOAPIClientError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TODOAPIClientError.swift; sourceTree = "<group>"; };
+		EB28C8981C6E00D5004A5E74 /* getTaskByIdResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getTaskByIdResponse.json; sourceTree = "<group>"; };
+		EB28C89A1C6E0327004A5E74 /* addTaskToUserRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addTaskToUserRequest.json; sourceTree = "<group>"; };
+		EB28C89C1C6E0364004A5E74 /* addTaskToUserResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = addTaskToUserResponse.json; sourceTree = "<group>"; };
+		EB28C89E1C6E1E26004A5E74 /* updateTaskRequest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateTaskRequest.json; sourceTree = "<group>"; };
+		EB28C8A01C6E1EFC004A5E74 /* updateTaskResponse.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = updateTaskResponse.json; sourceTree = "<group>"; };
+		EB2B5E8A1E657C8900B62211 /* KataTODOAPIClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KataTODOAPIClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2B5E8E1E657C8A00B62211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F06AD546F4EC015C4AEB6C1F /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB28C85D1C6DD32A004A5E74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB8AEF1C8A6F3564D6AC77D4 /* Pods_KataTODOAPIClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2B5E871E657C8900B62211 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2B5E8F1E657C8A00B62211 /* KataTODOAPIClient.framework in Frameworks */,
+				A728FA85059C08A58464AD4B /* Pods_KataTODOAPIClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		278C75894C520E46833A1E8E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F06AD546F4EC015C4AEB6C1F /* Pods.framework */,
+				D74BAB9FE6332141F4937F17 /* Pods_KataTODOAPIClientTests.framework */,
+				0F618648049BD9D1C4BA6CBB /* Pods_KataTODOAPIClient.framework */,
+				9E7BE8B071FFE07D669635D6 /* Pods_KataTODOAPIClient_KataTODOAPIClientTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		76AC067C48F0E5B4B2C84BE0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0848BC66DFE0F68A5F29B5ED /* Pods-KataTODOAPIClientTests.debug.xcconfig */,
+				8C76A5B3D80902019BAD4A8A /* Pods-KataTODOAPIClientTests.release.xcconfig */,
+				B27E8D81D6515C4971D35505 /* Pods-KataTODOAPIClient.debug.xcconfig */,
+				991833180216B366BC8E248D /* Pods-KataTODOAPIClient.release.xcconfig */,
+				E47E9D7801863BF27D058C91 /* Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig */,
+				35637D6F85613D08BE7B1A1A /* Pods-KataTODOAPIClient-KataTODOAPIClientTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EB28C8571C6DD32A004A5E74 = {
+			isa = PBXGroup;
+			children = (
+				EB28C88B1C6DDE7B004A5E74 /* TODOAPIClientPlayground.playground */,
+				EB28C8631C6DD32A004A5E74 /* KataTODOAPIClient */,
+				EB2B5E8B1E657C8A00B62211 /* KataTODOAPIClientTests */,
+				EB28C8621C6DD32A004A5E74 /* Products */,
+				278C75894C520E46833A1E8E /* Frameworks */,
+				76AC067C48F0E5B4B2C84BE0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		EB28C8621C6DD32A004A5E74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8611C6DD32A004A5E74 /* KataTODOAPIClient.framework */,
+				EB2B5E8A1E657C8900B62211 /* KataTODOAPIClientTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB28C8631C6DD32A004A5E74 /* KataTODOAPIClient */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C87B1C6DD72A004A5E74 /* TODOAPIClient.swift */,
+				EB28C87E1C6DD772004A5E74 /* TODOAPIClientConfig.swift */,
+				EB28C8831C6DDA3A004A5E74 /* Interceptors */,
+				EB28C87D1C6DD760004A5E74 /* DTOs */,
+				EB28C8821C6DD9FA004A5E74 /* Parser */,
+				EB28C8861C6DDB0E004A5E74 /* Errors */,
+				EB28C8641C6DD32A004A5E74 /* KataTODOAPIClient.h */,
+				EB28C8661C6DD32A004A5E74 /* Info.plist */,
+			);
+			path = KataTODOAPIClient;
+			sourceTree = "<group>";
+		};
+		EB28C87D1C6DD760004A5E74 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8801C6DD7CA004A5E74 /* TaskDTO.swift */,
+			);
+			name = DTOs;
+			sourceTree = "<group>";
+		};
+		EB28C8821C6DD9FA004A5E74 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8891C6DDBF8004A5E74 /* TaskDTOJSONParser.swift */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+		EB28C8831C6DDA3A004A5E74 /* Interceptors */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8841C6DDA56004A5E74 /* DefaultHeadersRequestInterceptor.swift */,
+			);
+			name = Interceptors;
+			sourceTree = "<group>";
+		};
+		EB28C8861C6DDB0E004A5E74 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8871C6DDB1F004A5E74 /* TODOAPIClientError.swift */,
+			);
+			name = Errors;
+			sourceTree = "<group>";
+		};
+		EB28C8901C6DFC08004A5E74 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8911C6DFC23004A5E74 /* getTasksResponse.json */,
+				EB28C8981C6E00D5004A5E74 /* getTaskByIdResponse.json */,
+				EB28C89A1C6E0327004A5E74 /* addTaskToUserRequest.json */,
+				EB28C89C1C6E0364004A5E74 /* addTaskToUserResponse.json */,
+				EB28C89E1C6E1E26004A5E74 /* updateTaskRequest.json */,
+				EB28C8A01C6E1EFC004A5E74 /* updateTaskResponse.json */,
+			);
+			name = JSON;
+			sourceTree = "<group>";
+		};
+		EB28C8931C6DFDD8004A5E74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C8941C6DFDE7004A5E74 /* NSError.swift */,
+				EB28C8961C6DFE37004A5E74 /* TODOAPIClientError.swift */,
+				49FF1D351F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift */,
+				49FF1D371F2BA37500AAA40D /* LSStubResponseDSL+Json.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		EB2B5E8B1E657C8A00B62211 /* KataTODOAPIClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				EB28C88C1C6DF109004A5E74 /* NocillaTestCase.swift */,
+				EB28C88E1C6DF13D004A5E74 /* TODOAPIClientTests.swift */,
+				EB28C8931C6DFDD8004A5E74 /* Extensions */,
+				EB28C8901C6DFC08004A5E74 /* JSON */,
+				EB2B5E8E1E657C8A00B62211 /* Info.plist */,
+			);
+			path = KataTODOAPIClientTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EB28C85E1C6DD32A004A5E74 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB28C8651C6DD32A004A5E74 /* KataTODOAPIClient.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		EB28C8601C6DD32A004A5E74 /* KataTODOAPIClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB28C8751C6DD32A004A5E74 /* Build configuration list for PBXNativeTarget "KataTODOAPIClient" */;
+			buildPhases = (
+				0AF89FA01D6A5D79DBEF8C71 /* [CP] Check Pods Manifest.lock */,
+				EB28C85C1C6DD32A004A5E74 /* Sources */,
+				EB28C85D1C6DD32A004A5E74 /* Frameworks */,
+				EB28C85E1C6DD32A004A5E74 /* Headers */,
+				EB28C85F1C6DD32A004A5E74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KataTODOAPIClient;
+			productName = KataTODOAPIClient;
+			productReference = EB28C8611C6DD32A004A5E74 /* KataTODOAPIClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EB2B5E891E657C8900B62211 /* KataTODOAPIClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2B5E921E657C8A00B62211 /* Build configuration list for PBXNativeTarget "KataTODOAPIClientTests" */;
+			buildPhases = (
+				BF901B71694A9ED80E6D420C /* [CP] Check Pods Manifest.lock */,
+				EB2B5E881E657C8900B62211 /* Resources */,
+				EB2B5E861E657C8900B62211 /* Sources */,
+				EB2B5E871E657C8900B62211 /* Frameworks */,
+				FA2D675EE0ABA984AD5C2BBE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB2B5E911E657C8A00B62211 /* PBXTargetDependency */,
+			);
+			name = KataTODOAPIClientTests;
+			productName = KataTODOAPIClientTests;
+			productReference = EB2B5E8A1E657C8900B62211 /* KataTODOAPIClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB28C8581C6DD32A004A5E74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Karumi;
+				TargetAttributes = {
+					EB28C8601C6DD32A004A5E74 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
+					};
+					EB2B5E891E657C8900B62211 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EB28C85B1C6DD32A004A5E74 /* Build configuration list for PBXProject "KataTODOAPIClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EB28C8571C6DD32A004A5E74;
+			productRefGroup = EB28C8621C6DD32A004A5E74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB28C8601C6DD32A004A5E74 /* KataTODOAPIClient */,
+				EB2B5E891E657C8900B62211 /* KataTODOAPIClientTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB28C85F1C6DD32A004A5E74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2B5E881E657C8900B62211 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2B5E9E1E657D5E00B62211 /* updateTaskResponse.json in Resources */,
+				EB2B5E9B1E657D5400B62211 /* addTaskToUserRequest.json in Resources */,
+				EB2B5E9A1E657D5100B62211 /* getTaskByIdResponse.json in Resources */,
+				EB2B5E9D1E657D5A00B62211 /* updateTaskRequest.json in Resources */,
+				EB2B5E991E657D4D00B62211 /* getTasksResponse.json in Resources */,
+				EB2B5E9C1E657D5700B62211 /* addTaskToUserResponse.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AF89FA01D6A5D79DBEF8C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KataTODOAPIClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF901B71694A9ED80E6D420C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KataTODOAPIClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA2D675EE0ABA984AD5C2BBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-KataTODOAPIClientTests/Pods-KataTODOAPIClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nocilla/Nocilla.framework",
+				"${BUILT_PRODUCTS_DIR}/BothamNetworking/BothamNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nocilla.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BothamNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KataTODOAPIClientTests/Pods-KataTODOAPIClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB28C85C1C6DD32A004A5E74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB28C8811C6DD7CA004A5E74 /* TaskDTO.swift in Sources */,
+				EB28C88A1C6DDBF8004A5E74 /* TaskDTOJSONParser.swift in Sources */,
+				EB28C87C1C6DD72A004A5E74 /* TODOAPIClient.swift in Sources */,
+				EB28C8881C6DDB1F004A5E74 /* TODOAPIClientError.swift in Sources */,
+				EB28C8851C6DDA56004A5E74 /* DefaultHeadersRequestInterceptor.swift in Sources */,
+				EB28C87F1C6DD772004A5E74 /* TODOAPIClientConfig.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EB2B5E861E657C8900B62211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2B5E981E657D4900B62211 /* TODOAPIClientError.swift in Sources */,
+				EB2B5E951E657D3D00B62211 /* NocillaTestCase.swift in Sources */,
+				49FF1D361F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift in Sources */,
+				49FF1D381F2BA37500AAA40D /* LSStubResponseDSL+Json.swift in Sources */,
+				EB2B5E961E657D4100B62211 /* TODOAPIClientTests.swift in Sources */,
+				EB2B5E971E657D4600B62211 /* NSError.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EB2B5E911E657C8A00B62211 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EB28C8601C6DD32A004A5E74 /* KataTODOAPIClient */;
+			targetProxy = EB2B5E901E657C8A00B62211 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EB28C8731C6DD32A004A5E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB28C8741C6DD32A004A5E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EB28C8761C6DD32A004A5E74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B27E8D81D6515C4971D35505 /* Pods-KataTODOAPIClient.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KataTODOAPIClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataTODOAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EB28C8771C6DD32A004A5E74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 991833180216B366BC8E248D /* Pods-KataTODOAPIClient.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = KataTODOAPIClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataTODOAPIClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		EB2B5E931E657C8A00B62211 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0848BC66DFE0F68A5F29B5ED /* Pods-KataTODOAPIClientTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = KataTODOAPIClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataTODOAPIClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		EB2B5E941E657C8A00B62211 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8C76A5B3D80902019BAD4A8A /* Pods-KataTODOAPIClientTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				INFOPLIST_FILE = KataTODOAPIClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.karumi.KataTODOAPIClientTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB28C85B1C6DD32A004A5E74 /* Build configuration list for PBXProject "KataTODOAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB28C8731C6DD32A004A5E74 /* Debug */,
+				EB28C8741C6DD32A004A5E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB28C8751C6DD32A004A5E74 /* Build configuration list for PBXNativeTarget "KataTODOAPIClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB28C8761C6DD32A004A5E74 /* Debug */,
+				EB28C8771C6DD32A004A5E74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2B5E921E657C8A00B62211 /* Build configuration list for PBXNativeTarget "KataTODOAPIClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2B5E931E657C8A00B62211 /* Debug */,
+				EB2B5E941E657C8A00B62211 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EB28C8581C6DD32A004A5E74 /* Project object */;
+}

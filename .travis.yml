@@ -1,0 +1,15 @@
+language: objective-c
+osx_image: xcode9
+
+before_install:
+  - brew update
+  - gem install xcpretty
+  - gem install cocoapods --version 1.2.1
+  - pod _1.2.1_ repo update
+
+install:
+  - pod _1.2.1_ install
+
+script:
+  - swiftlint
+  - set -o pipefail && xcodebuild -workspace KataTODOAPIClient.xcworkspace -scheme 'KataTODOAPIClient' -destination 'platform=iOS Simulator,name=iPhone 6s Plus' build test CODE_SIGN_IDENTITY=- | xcpretty -c
