@@ -10,6 +10,7 @@
 		49FF1D361F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1D351F2B9CF400AAA40D /* LSStubRequestDSL+Json.swift */; };
 		49FF1D381F2BA37500AAA40D /* LSStubResponseDSL+Json.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1D371F2BA37500AAA40D /* LSStubResponseDSL+Json.swift */; };
 		A728FA85059C08A58464AD4B /* Pods_KataTODOAPIClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D74BAB9FE6332141F4937F17 /* Pods_KataTODOAPIClientTests.framework */; };
+		C3BF92D02155359800031DB5 /* malformed.json in Resources */ = {isa = PBXBuildFile; fileRef = C3BF92CF2155359800031DB5 /* malformed.json */; };
 		DB8AEF1C8A6F3564D6AC77D4 /* Pods_KataTODOAPIClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F618648049BD9D1C4BA6CBB /* Pods_KataTODOAPIClient.framework */; };
 		EB28C8651C6DD32A004A5E74 /* KataTODOAPIClient.h in Headers */ = {isa = PBXBuildFile; fileRef = EB28C8641C6DD32A004A5E74 /* KataTODOAPIClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB28C87C1C6DD72A004A5E74 /* TODOAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB28C87B1C6DD72A004A5E74 /* TODOAPIClient.swift */; };
@@ -51,6 +52,7 @@
 		991833180216B366BC8E248D /* Pods-KataTODOAPIClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient/Pods-KataTODOAPIClient.release.xcconfig"; sourceTree = "<group>"; };
 		9E7BE8B071FFE07D669635D6 /* Pods_KataTODOAPIClient_KataTODOAPIClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataTODOAPIClient_KataTODOAPIClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B27E8D81D6515C4971D35505 /* Pods-KataTODOAPIClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient/Pods-KataTODOAPIClient.debug.xcconfig"; sourceTree = "<group>"; };
+		C3BF92CF2155359800031DB5 /* malformed.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = malformed.json; sourceTree = "<group>"; };
 		D74BAB9FE6332141F4937F17 /* Pods_KataTODOAPIClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KataTODOAPIClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E47E9D7801863BF27D058C91 /* Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KataTODOAPIClient-KataTODOAPIClientTests/Pods-KataTODOAPIClient-KataTODOAPIClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB28C8611C6DD32A004A5E74 /* KataTODOAPIClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KataTODOAPIClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,6 +202,7 @@
 				EB28C89C1C6E0364004A5E74 /* addTaskToUserResponse.json */,
 				EB28C89E1C6E1E26004A5E74 /* updateTaskRequest.json */,
 				EB28C8A01C6E1EFC004A5E74 /* updateTaskResponse.json */,
+				C3BF92CF2155359800031DB5 /* malformed.json */,
 			);
 			name = JSON;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				EB2B5E9E1E657D5E00B62211 /* updateTaskResponse.json in Resources */,
 				EB2B5E9B1E657D5400B62211 /* addTaskToUserRequest.json in Resources */,
 				EB2B5E9A1E657D5100B62211 /* getTaskByIdResponse.json in Resources */,
+				C3BF92D02155359800031DB5 /* malformed.json in Resources */,
 				EB2B5E9D1E657D5A00B62211 /* updateTaskRequest.json in Resources */,
 				EB2B5E991E657D4D00B62211 /* getTasksResponse.json in Resources */,
 				EB2B5E9C1E657D5700B62211 /* addTaskToUserResponse.json in Resources */,

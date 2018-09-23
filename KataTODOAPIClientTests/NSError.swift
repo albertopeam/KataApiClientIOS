@@ -15,5 +15,12 @@ extension NSError {
             code: NSURLErrorNetworkConnectionLost,
             userInfo: nil)
     }
+    
+    static func timeoutError() -> NSError {
+        return NSError(domain: NSURLErrorDomain,
+                       code: NSURLErrorTimedOut,
+                       userInfo: nil)
+    }
+    
 
 }
